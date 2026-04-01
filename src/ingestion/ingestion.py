@@ -12,7 +12,7 @@ load_dotenv()
 PG_CONNECTION = os.getenv("PG_CONNECTION_STRING")
 
 
-def ingest_pdf(file_path: str):
+def ingest_file(file_path: str):
     """Ingest a PDF file and save it in vector database"""
 
     print(f"Processing document: {file_path}")
@@ -53,6 +53,6 @@ if __name__ == "__main__":
     test_file = "Retail_banking.pdf"
 
     if os.path.exists(test_file):
-        ingest_pdf(test_file)
+        ingest_file(test_file)
     else:
         print(f"Test file {test_file} not found.")
