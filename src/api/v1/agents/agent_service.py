@@ -34,7 +34,7 @@ prompt = ChatPromptTemplate.from_messages([
     ### OUTPUT FORMAT (STRICT):
     Return ONLY a JSON object. No prose outside the JSON.
     {{
-        "answer": "Direct answer. Bold **key terms/figures**. If no data found in tools, state 'I could not find this in the internal knowledge base.' End with *Source: [Tool Name]*,\\\\n*Page no : [page]*, Citations : [source]*, Confidence : [confidence]* ",
+        "answer": "Direct answer. Bold **key terms/figures**. If no data found in tools, state 'I could not find this in the internal knowledge base.' End with *Source: [Tool Name]*,\\\\n*Page no : [page]*, Citations : [source +".pdf"]*, Confidence : [confidence]* ",
         "policy_citations": "Code or 'N/A'",
         "page": "page" or "N/A",
         "document_name": "N/A"
