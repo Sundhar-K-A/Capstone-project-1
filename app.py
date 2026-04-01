@@ -37,7 +37,7 @@ for msg in st.session_state.messages:
             meta     = " · ".join(filter(None, [doc, f"Page {page_no}" if page_no and page_no != "N/A" else None]))
 
             if (citation and citation != "N/A") or chunks:
-                label = f"📎 Source & Chunks — {meta}" if meta else " Source & Chunks"
+                label = f" Source & Chunks — {meta}" if meta else " Source & Chunks"
                 with st.expander(label):
                     if citation and citation != "N/A":
                         st.markdown(f"**Citation:** {citation}")
