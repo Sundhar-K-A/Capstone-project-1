@@ -24,13 +24,6 @@ with st.sidebar.expander("View Profile"):
 
 st.sidebar.divider()
 
-if st.sidebar.button("New Session", use_container_width=True):
-    st.session_state.session_id = str(uuid.uuid4())
-    st.session_state.messages = []
-    st.rerun()
-
-st.sidebar.caption(f"Session: `{st.session_state.session_id[:16]}…`")
-
 # ── Render existing chat ───────────────────────────────────────────────────────
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
