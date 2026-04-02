@@ -3,7 +3,7 @@ import requests
 
 st.set_page_config(page_title="Admin Panel", layout="wide")
 
-st.title("🛠 Admin Panel")
+st.title("Admin Panel")
 
 st.subheader("Upload Knowledge Base")
 
