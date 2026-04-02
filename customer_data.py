@@ -4,7 +4,7 @@ CUSTOMERS = [
         "name": "Harini P",
         "profile": {
             "age": 22,
-            "income": 1200000,
+            "income": 1200000, 
             "employment": "Salaried",
             "risk_appetite": "Moderate",
             "goals": [
